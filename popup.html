@@ -2,12 +2,37 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="button.css">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .save-button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
+
+    .hint {
+      font-size: 10px;
+      line-height: 10px;
+    }
+
+    #matches {
+      margin-top: 5px;
+      width: calc(100vw - 25px);
+      min-width: 200px;
+    }
+  </style>
 </head>
 
 <body>
-  asdfasdfasdfs
-  <button id="changeColor"></button>
+  Matches<br />
+  <textarea id="matches" rows="5"></textarea><br />
+  <span class="hint">Regex supported, separated by semi-colon</span><br />
+  <div class="save-button-container">
+    <button id="save-button">Save</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 
